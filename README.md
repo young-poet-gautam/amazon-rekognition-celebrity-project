@@ -26,6 +26,8 @@ This project uses **AWS Rekognition** to recognize celebrities from images uploa
 The `assets/` directory contains two test images:
 - `testimage1.jpg` - Jackie Chan
 - `testimage2.jpeg` - Shahrukh Khan
+![image](https://github.com/user-attachments/assets/2a33e457-ae1e-4add-b788-f803d6dbe9cb)
+
 
 ### 4. CloudWatch Logs:
 You can check the recognized celebrities' names in **CloudWatch Logs** after an image is uploaded.
