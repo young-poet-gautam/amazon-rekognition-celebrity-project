@@ -1,2 +1,36 @@
-# amazon-rekognition-celebrity-project
-This project leverages AWS Rekognition to recognize celebrities in images uploaded to an S3 bucket. The solution triggers an AWS Lambda function to process the image using Rekognition's RecognizeCelebrities API. Once processed, the recognized celebrity names are logged in CloudWatch Logs.
+# Celebrity Recognition using AWS Rekognition
+
+This project uses **AWS Rekognition** to recognize celebrities from images uploaded to an **S3 bucket**. When an image is uploaded, a **Lambda function** is triggered, which calls Rekognition's `RecognizeCelebrities` API to identify celebrities in the image.
+
+## Services Used:
+- AWS Lambda
+- Amazon S3
+- Amazon Rekognition
+- CloudWatch (for logging)
+
+## Project Setup:
+
+### 1. AWS Configuration:
+- Create an S3 bucket to upload images.
+- Create a Lambda function with the provided `lambda_function.py`.
+- Ensure your Lambda function has appropriate IAM roles (S3, Rekognition, CloudWatch access).
+
+### 2. Deploying the Lambda Function:
+- Upload the `lambda_function.py` to AWS Lambda.
+- Set up the S3 bucket to trigger Lambda on new image uploads.
+
+### 3. Example Images:
+The `assets/` directory contains two test images:
+- `testimage1.jpg` - Jackie Chan
+- `testimage2.jpeg` - Shahrukh Khan
+
+### 4. CloudWatch Logs:
+You can check the recognized celebrities' names in **CloudWatch Logs** after an image is uploaded.
+
+## Dependencies:
+- Python 3.x
+- Boto3
+
+## To Do:
+- Extend functionality to store recognized celebrity names in S3.
+- Add CloudFormation script to automate setup.
