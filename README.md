@@ -18,6 +18,7 @@ This project uses **AWS Rekognition** to recognize celebrities from images uploa
 ### 2. Deploying the Lambda Function:
 - Upload the `lambda_function.py` to AWS Lambda.
 - Set up the S3 bucket to trigger Lambda on new image uploads.
+![image](https://github.com/user-attachments/assets/d93d38f1-82de-42c3-b8f9-a4cdd4c16896)
 
 ### 3. Example Images:
 The `assets/` directory contains two test images:
@@ -26,6 +27,8 @@ The `assets/` directory contains two test images:
 
 ### 4. CloudWatch Logs:
 You can check the recognized celebrities' names in **CloudWatch Logs** after an image is uploaded.
+![image](https://github.com/user-attachments/assets/19756787-ad81-4a33-81f9-1e9c9acac1c0)
+
 
 ## Dependencies:
 - Python 3.x
