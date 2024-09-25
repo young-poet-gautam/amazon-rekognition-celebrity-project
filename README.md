@@ -14,6 +14,8 @@ This project uses **AWS Rekognition** to recognize celebrities from images uploa
 - Create an S3 bucket to upload images.
 - Create a Lambda function with the provided `lambda_function.py`.
 - Ensure your Lambda function has appropriate IAM roles (S3, Rekognition, CloudWatch access).
+  ![image](https://github.com/user-attachments/assets/f34c9b06-02fb-44cf-9099-398ad8ce0000)
+
 
 ### 2. Deploying the Lambda Function:
 - Upload the `lambda_function.py` to AWS Lambda.
